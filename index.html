@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRACTICE API</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+   <header>
+    <div class="navbar bg-base-100 flex justify-between">
+  
+    <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
+  
+  
+    <div class="form-control flex flex-row">
+      <input id="searchSection" type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
+      <button onclick="hendleSearch()" class="btn btn-accent">Search</button>
+    </div>
+    <div class="dropdown dropdown-end">
+      <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+        <div class="w-10 rounded-full">
+          <img src="" />
+        </div>
+      </label>
+      <ul tabindex="0" class="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
+        <li>
+          <a class="justify-between">
+            Profile
+            <span class="badge">New</span>
+          </a>
+        </li>
+        <li><a>Settings</a></li>
+        <li><a>Logout</a></li>
+      </ul>
+    </div>
+  
+</div>
+<div class="flex justify-center mt-10">
+    <span id="spinner" class="loading loading-spinner loading-lg  hidden"></span>
+</div>
+<div class="flex justify-center mt-10">
+    <button onclick="showAlldata()" class="btn btn-success ">Show All</button>
+</div>
+   </header>
+   <main >
+    <section id="card-section" class="grid lg:grid-cols-4 md:grid-cols-2 gap-10 mt-36 w-11/12 mx-auto" >        
+    </section>
+
+
+    
+
+     <div id="modalContainer">
+   
+      <!-- Open the modal using ID.showModal() method -->
+
+
+     </div> 
+     <p id="no-data" class="text-blue-500 text-center mt-5 text-xl font-bold hidden">No Data Found</p>
+
+   </main>
+
+
+
+
+   <!-- script -->
+   <script src="js/index.js"></script>
+</body>
+
+</html>
